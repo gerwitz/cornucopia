@@ -98,7 +98,7 @@ SELECT first_name, last_name, country FROM Authors;
 INSERT INTO Authors(first_name, last_name, country) 
 VALUES (:first_name, :last_name, :country)
 ```
-Notice the query annotations (`--! authors`, `--! insert_authors`) and the named bind parameters (`:first_name`, etc.).
+Notice the query annotations (`--! authors`, `--! insert_author`) and the named bind parameters (`:first_name`, etc.).
 
 Then, after generating the Rust code with Cornucopia's CLI, you can import it into your project like so:
 ```rust
